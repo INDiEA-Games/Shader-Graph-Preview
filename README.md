@@ -1,6 +1,6 @@
 # Shader Graph Preview
 
-![INDiEA Shader Graph Preview](Resources/Logo_ShaderGraphPreview.png)
+![INDiEA Shader Graph Preview](Logo_ShaderGraphPreview.png)
 
 ---
 
@@ -89,7 +89,7 @@ That pushes people into a **slow, repetitive loop**: spin up a test scene, place
 
 ## Preview window UI
 
-![Shader Graph Preview editor window](Resources/Screenshot_ShaderGraphPreviewWindow.png)
+![Shader Graph Preview editor window](Screenshot_ShaderGraphPreviewWindow.png)
 
 ### 1) Top toolbar
 
