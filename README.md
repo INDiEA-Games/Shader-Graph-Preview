@@ -30,7 +30,7 @@ That pushes people into a **slow, repetitive loop**: spin up a test scene, place
 | Item          | Details                                                                          |
 | ------------- | -------------------------------------------------------------------------------- |
 | Name          | INDiEA Shader Graph Preview                                                      |
-| Version       | `0.2.0`                                                                          |
+| Version       | `0.3.0`                                                                          |
 | Unity         | **2021.3** LTS or newer                                                          |
 | Target        | Projects using **Shader Graph** (options per **Built-in / URP / HDRP** pipeline) |
 
@@ -54,15 +54,12 @@ That pushes people into a **slow, repetitive loop**: spin up a test scene, place
 
 | Version     | Built-In | URP | HDRP |
 | ----------- | -------- | --- | ---- |
-| 2021.3.0f1  | O        | O   | O    |
-| 2021.3.45f2 | X        | O   | X    |
-| 2022.3.0    | X        | O   | X    |
-| 2022.3.4f1  | X        | O   | X    |
-| 2022.3.23f1 | X        | O   | X    |
-| 2022.3.62f2 | X        | O   | X    |
-| 2022.3.62f3 | X        | O   | X    |
-| 6000.0.23f1 | X        | O   | X    |
-| 6000.3.13f1 | X        | O   | X    |
+| 2021.3.0f1  | O        | O   | △    |
+| 2021.3.45f2 | O        | O   | △    |
+| 2022.3.0    | O        | O   | △    |
+| 2022.3.62f3 | O        | O   | △   |
+| 6000.0.23f1 | O        | O   | △    |
+| 6000.3.13f1 | O        | O   | △    |
 
 
 ---
@@ -77,13 +74,14 @@ That pushes people into a **slow, repetitive loop**: spin up a test scene, place
 
 ## Key features
 
-- **Dedicated 3D preview window** — validate material, lighting, and camera in a separate editor window driven by the active Shader Graph.
-- **Camera** — orbit and zoom (mouse wheel), perspective / orthographic; in orthographic mode, **Shift + left-drag** helps snap to axes.
-- **Lighting** — main directional and additional point lights, color, intensity, shadows; **right mouse / middle button** for intuitive control.
-- **Environment** — **Solid Color**, **Skybox**, and **Room** background modes.
-- **Mesh** — **presets** (cylinder, quad, etc.) and **custom mesh** preview.
-- **Realtime preview** — when enabled in settings, mirrors the Shader Graph to disk so edits can be reflected in the preview **close to real time** (behavior may vary by Shader Graph and Unity version).
-- **Performance** — target **FPS**, **resolution scale**, and **stop-draw** when the graph isn’t selected to reduce editor load.
+- **Dedicated 3D preview window** — linked to your active Shader Graph.
+- **Real-time preview** — graph changes are reflected in real time in the preview.
+- **Render pipeline** — choose Built-in, URP, or your custom Scriptable Render Pipeline (SRP) in Preview Settings.
+- **Camera** — orbit, zoom, perspective/orthographic; in orthographic mode
+- **Lighting** — main directional light plus extra point lights, color, intensity, shadows
+- **Environment** — solid color, skybox, and room modes
+- **Mesh** — presets (cube, sphere, capsule, cylinder, plane, quad) and custom meshes
+- **Performance** — target FPS, resolution scale, and stop rendering when no Shader Graph is selected
 
 ---
 
@@ -274,5 +272,7 @@ A leading `*` on a field name means it is **not** in the **simplified UI** of th
 
 ## Contact & support
 
-- Prefer your purchase channel’s (e.g. Unity Asset Store) **support policy and contact path**.  
+- **GitHub:** [github.com/INDiEA-Games/Shader-Graph-Preview](https://github.com/INDiEA-Games/Shader-Graph-Preview)  
+- **Discord:** [discord.gg/53FQb6dbFd](https://discord.gg/53FQb6dbFd)  
+- **Email:** [indiea.games.dev@gmail.com](mailto:indiea.games.dev@gmail.com)  
 - This README is a **guide**; **Unity and the seller’s EULA** take precedence for licensing.
